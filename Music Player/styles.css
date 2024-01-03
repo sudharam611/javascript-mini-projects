@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden !important;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden !important;
+  transition: background 0.3s;
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+.player-container {
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.image-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  margin: 40px auto;
+  cursor: pointer;
+  height: 4px;
+  width: 90%;
+}
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  width: 0%;
+  height: 100%;
+  transition: width 0.1s linear;
+}
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.player-controls i {
+}
+.fas {
+  font-size: 30px;
+  color: rgba(25, 25, 25, 0.6);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+}
+.fas:hover {
+  color: rgba(25, 25, 25, 0.9);
+}
+.main-btn {
+  font-size: 40px;
+  position: relative;
+  /* top: px; */
+}
+
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 90vw;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+}
